@@ -67,7 +67,7 @@ Visit the link "http://www.35.200.146.141.xip.io/" to check out the hosted appli
 - Log in as the grader ssh -i ~/.ssh/grader_key -p 2200 grader@XX.XX.XX.XX
 
 # Configure the local timezone to UTC
-Run sudo dpkg-reconfigure tzdata, select none of the above, then UTC.
+- Run sudo dpkg-reconfigure tzdata, select none of the above, then UTC.
 
 # Install and configure Apache to serve a Python mod_wsgi application
 - Install Apache web server:
@@ -95,7 +95,8 @@ Run sudo dpkg-reconfigure tzdata, select none of the above, then UTC.
     - Paste in the following: RedirectMatch 404 /\.git
 
 # Switch the database in the application from SQLite to PostgreSQL
-- replace engine with engine = create_engine('postgresql://catalog:INSERT_PASSWORD_FOR_DATABASE_HERE@localhost/catalog') 
+- replace engine with
+engine = create_engine('postgresql://catalog:INSERT_PASSWORD_FOR_DATABASE_HERE@localhost/catalog') 
 
 # Setup for deploying a Flask Application on Ubuntu VPS
 - Refer to the website and replace flaskapp with catalog.
@@ -133,4 +134,4 @@ Run sudo dpkg-reconfigure tzdata, select none of the above, then UTC.
 - Google will provide a client ID and client secret for the project, download the JSON file, and copy and paste the contents into the client_secrets.json file
 - Add the client ID to the templates/login.html file in the project directory
 - Add the complete file path for the client_secrets.json file in the __init__.py file; change it from 'client_secrets.json' to '/var/www/catalog/catalog/client_secrets.json'
-
+- .xip.io is used as Google Authorized redirect URI's doesn't allow public IP without .com or .org. This is the workaround possible.
