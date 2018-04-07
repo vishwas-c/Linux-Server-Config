@@ -29,10 +29,10 @@ Visit the link "http://www.35.200.146.141.xip.io/" to check out the hosted appli
     -sudo vi /etc/ssh/sshd_config"  
 - Change port form 22 to 2200. Run sudo service ssh restart
 - Under Networking VPC network open Firewall rules. Change ssh port to tcp:2200.
-<img src="pics/firewall.png" width="800">
+<img src="pics/firewall.PNG" width="800">
 - Now under SSH button choose open browser window on custom port. 
 - The terminal should open on 2200 port now.
-<img src="pics/port.png" width="800">
+<img src="pics/port.PNG" width="800">
 
 # Configure the ufw Firewall
 - Check if the ufw is active by running sudo ufw status
@@ -128,7 +128,7 @@ Run sudo dpkg-reconfigure tzdata, select none of the above, then UTC.
 
 # To get the client_secrets.json files working
 - Authenticate login through Google:
-<img src="pics/auth.png" width="800">
+<img src="pics/auth.PNG" width="800">
 
 - Google will provide a client ID and client secret for the project, download the JSON file, and copy and paste the contents into the client_secrets.json file
 - Add the client ID to the templates/login.html file in the project directory
