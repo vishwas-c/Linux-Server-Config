@@ -3,7 +3,7 @@ This is the final project for Udacity "Full Stack Web Developer Nanodegree".
 
 Below is the set of instructions on how to set up a Ubuntu Linux server to host a Movie Catalog app built with Flask.
 
-Visit the link "http://www.35.200.146.141.xip.io/" to check out the hosted application.
+Visit the link "http://www.35.200.141.52.xip.io/" to check out the hosted application.
 
 # Software to install during the configuration
 - Apache2
@@ -124,7 +124,7 @@ engine = create_engine('postgresql://catalog:INSERT_PASSWORD_FOR_DATABASE_HERE@l
 
 # Run application
 - Restart Apache: $ sudo service apache2 restart
-- Open a browser and put in your public ip-address 35.200.146.141
+- Open a browser and put in your public ip-address 35.200.141.52
 - View the last 20 lines in the error log: $ sudo tail -20 /var/log/apache2/error.log
 
 # To get the client_secrets.json files working
